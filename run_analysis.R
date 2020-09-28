@@ -63,4 +63,4 @@ meltedData <- melt(allData, id = c("Subject", "Activity"))
 tidyData <- dcast(meltedData, Subject + Activity ~ variable, mean)
 
 //Answer
-write.table(tidyData, "./tidy_dataset.txt", row.names = FALSE, quote = FALSE)
+write.table(tidyData, "./dataset_tidy.txt", row.names = FALSE, quote = FALSE)
